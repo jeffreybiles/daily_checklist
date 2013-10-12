@@ -23,7 +23,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'ember-rails'
-
+gem 'ember-source', '1.0.0'
+gem "ember-data-source", "~> 1.0.0.beta.3"
+gem 'emblem-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

@@ -9,7 +9,7 @@ DailyChecklist::Application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resource :tasks, only: [:index, :show]
+      resources :tasks, only: [:index, :show]
     end
   end
   # Example of regular route:
