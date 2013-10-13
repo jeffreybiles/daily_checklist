@@ -1,0 +1,4 @@
+form-for controller
+  =input title
+  =input detail
+  =submit
