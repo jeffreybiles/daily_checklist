@@ -1,3 +1,4 @@
 h1 Tasks...
 each task in controller
   render "task" task
+= outlet
