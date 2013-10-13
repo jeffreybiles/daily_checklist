@@ -10,7 +10,7 @@ class Api::V1::TasksController < ApplicationController
   end
 
   def create
-    @task = Task.create(params[:task].permit(:title, :details))
+    @task = Task.create(task_params)
     respond_with @task, location: 'blah'
   end
 
