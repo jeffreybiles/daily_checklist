@@ -14,6 +14,11 @@ class Api::V1::TasksController < ApplicationController
     respond_with @task, location: 'blah'
   end
 
+  def destroy
+    @task = Task.find(params[:id])
+    respond_with @task.destroy
+  end
+
   private
 
   def task_params
