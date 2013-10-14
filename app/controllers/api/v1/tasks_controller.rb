@@ -19,6 +19,11 @@ class Api::V1::TasksController < ApplicationController
     respond_with @task.destroy
   end
 
+  def update
+    @task = Task.find(params[:id])
+    respond_with @task.update_attributes(task_params)
+  end
+
   private
 
   def task_params

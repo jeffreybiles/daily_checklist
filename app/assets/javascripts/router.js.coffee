@@ -3,3 +3,4 @@
 App.Router.map ()->
   @resource 'tasks', ->
     @route 'new'
+    @route 'edit', path: '/:task_id'
