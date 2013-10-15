@@ -1,6 +1,7 @@
-h2= title
+li
+  input.toggle type='checkbox'
+  label= title
+  button.destroy click="delete"
 =details
-br
+|||
 link-to 'tasks.edit' this | edit
-br
-a click="delete" delete

@@ -12,7 +12,3 @@ App.TasksRoute = Ember.Route.extend
         @set('validationErrors', jQuery.parseJSON(error.responseText))
       else
         alert("An error occured - REST API not available - Please try again")
-
-App.TasksNewRoute = Ember.Route.extend
-  model: ->
-    @store.createRecord 'task'
