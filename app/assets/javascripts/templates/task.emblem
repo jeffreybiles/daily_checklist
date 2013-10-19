@@ -1,7 +1,13 @@
-li
-  input.toggle type='checkbox'
-  label= title
-  button.destroy click="delete"
-=details
-|||
-link-to 'tasks.edit' this | edit
+li class=isEditing:editing
+  if isEditing
+    form submit='acceptChanges'
+      =input class="edit" type="text" value=title
+      =input class="edit" type="text" value=details placeholder="details"
+      input type="submit"
+  else
+    input.toggle type='checkbox'
+    label doubleClick=editTodo
+      = title
+      |    -
+      small= details
+    button.destroy click="delete"

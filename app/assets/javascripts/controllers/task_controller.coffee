@@ -7,5 +7,19 @@ App.TaskController = Ember.ObjectController.extend
         @transitionToRoute('tasks')
       ), (error) =>
         task.rollback()
-        # gotta figure out a way to keep it on the main page... it deletes until you reload
         alert("couldn't delete... please try again later")
+
+    acceptChanges: ->
+      @set('isEditing', false)
+
+      if Ember.isEmpty @get('model.title')
+        @send('delete')
+      else
+        @get('model').save()
+
+    editTodo: ->
+      @set('isEditing', true)
+
+
+  isEditing: false
+
