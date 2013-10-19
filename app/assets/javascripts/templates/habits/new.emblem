@@ -1,7 +1,5 @@
 h1 New Habit
 
-= App.days_list
-
 form submit='createHabit'
   =input value=title placeholder='title'
   =input value=details placeholder='details'
@@ -30,12 +28,3 @@ form submit='createHabit'
     | Sunday
 
   input type="submit"
-
-/ form-for model
-/   =input title
-/   =input details as="text"
-
-/   =input monday as="boolean"
-/   =input tuesday as="checkbox"
-
-/   input type="submit"
