@@ -7,3 +7,5 @@ App.Router.map ()->
   @resource 'habits', ->
     @route 'new'
     @route 'edit', path: '/:habit_id/edit'
+
+App.set('days_list', ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'])

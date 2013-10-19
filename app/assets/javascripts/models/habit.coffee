@@ -1,4 +1,4 @@
-App.Habit = DS.Model.extend
+App.Habit = DS.Model.extend Ember.Validations.Mixin,
   title: DS.attr('string')
   details: DS.attr('string')
   monday: DS.attr('boolean')

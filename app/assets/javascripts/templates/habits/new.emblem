@@ -1,0 +1,12 @@
+h1 New Habit
+
+= App.days_list
+
+form-for controller
+  =input title
+  =input details as="text"
+
+  =input monday
+  =input tuesday as="checkbox"
+
+  input type="submit"

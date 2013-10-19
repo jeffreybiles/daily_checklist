@@ -1,6 +1,6 @@
 App.HabitController = Ember.ObjectController.extend
   days: ( ->
-    days_list = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-    days = days_list.filter (day, i, e) =>
+    App.get('days_list').filter (day, i, e) =>
+      console.log(@get(day))
       @get(day)
   ).property('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')

@@ -21,12 +21,12 @@ class Api::V1::HabitsController < ApplicationController
 
   def update
     @habit = Habit.find(params[:id])
-    respond_with @habit.update_attributes(task_params)
+    respond_with @habit.update_attributes(habit_params)
   end
 
   private
 
-  def task_params
-    params.require(:task).permit(:title, :details, :monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday)
+  def habit_params
+    params.require(:habit).permit(:title, :details, :monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday)
   end
 end

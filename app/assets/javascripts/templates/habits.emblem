@@ -1,4 +1,10 @@
-h1 Habits
+.row-fluid
+  .span4
+    h1 Habits
 
-each habit in controller
-  render "habit" habit
+    link-to 'habits.new' | New Habit
+    each habit in controller
+      render "habit" habit
+
+  .span8
+    = outlet
