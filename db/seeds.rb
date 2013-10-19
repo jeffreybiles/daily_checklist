@@ -10,3 +10,8 @@ Task.create([
               { title: 'floss', details: 'do it at night' },
               { title: 'shower', details: 'do it in the morning'}
             ])
+
+Habit.create([
+  { title: 'floss', details: 'do it at night', monday: true, wednesday: true, thursday: true },
+  { title: 'shower', details: 'do it in the morning', tuesday: true, thursday: true}
+            ])
