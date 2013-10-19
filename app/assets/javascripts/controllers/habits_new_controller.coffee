@@ -1,6 +1,6 @@
 App.HabitsNewController = Ember.ObjectController.extend
   actions:
-    submit: ->
+    createHabit: ->
       # later, just send this to habitsController where this will be combined with the method for editing
       habit = @get('model')
       habit.save().then ( =>

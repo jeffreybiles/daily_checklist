@@ -2,11 +2,40 @@ h1 New Habit
 
 = App.days_list
 
-form-for controller
-  =input title
-  =input details as="text"
+form submit='createHabit'
+  =input value=title placeholder='title'
+  =input value=details placeholder='details'
 
-  =input monday
-  =input tuesday as="checkbox"
+  / I can't believe I have to type out each of these.  Like a barbarian.
+  .input
+    =input type="checkbox" checked=monday
+    | Monday
+  .input
+    =input type="checkbox" checked=tuesday
+    | Tuesday
+  .input
+    =input type="checkbox" checked=wednesday
+    | Wednesday
+  .input
+    =input type="checkbox" checked=thursday
+    | Thursday
+  .input
+    =input type="checkbox" checked=friday
+    | Friday
+  .input
+    =input type="checkbox" checked=saturday
+    | Saturday
+  .input
+    =input type="checkbox" checked=sunday
+    | Sunday
 
   input type="submit"
+
+/ form-for model
+/   =input title
+/   =input details as="text"
+
+/   =input monday as="boolean"
+/   =input tuesday as="checkbox"
+
+/   input type="submit"
