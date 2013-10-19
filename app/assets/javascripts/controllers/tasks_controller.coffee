@@ -10,3 +10,11 @@ App.TasksController = Ember.ArrayController.extend
       @set('newTitle', '')
       @set('newDetails', '')
       task.save()
+
+  remaining: ( ->
+    @get('length')
+  ).property('@each.isCompleted')
+
+  inflection: ( ->
+    if @get('remaining') == 1 then "task" else "tasks"
+  ).property('remaining')

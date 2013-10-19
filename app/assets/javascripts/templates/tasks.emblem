@@ -1,11 +1,17 @@
-section#main
-  h1 Tasks...
-  form submit='createTask'
-    =input class="new-todo" type="text" value=newTitle placeholder="title"
-    hr
-    =input class="new-todo" type="text" value=newDetails placeholder="details"
-    =input type="submit"
-  ul#todo-list
-    each task in controller
-      render "task" task
-    = outlet
+section#todoapp
+  header#header
+    h1 Tasks...
+    form submit='createTask'
+      =input class="new-todo" type="text" value=newTitle placeholder="title"
+      hr
+      =input class="new-todo" type="text" value=newDetails placeholder="details"
+      =input type="submit"
+  section#main
+    ul#todo-list
+      each task in controller
+        render "task" task
+      = outlet
+  footer#footer
+    span#todo-count
+      strong= remaining
+      |  {{inflection}} left
