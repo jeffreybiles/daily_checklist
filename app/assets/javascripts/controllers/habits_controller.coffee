@@ -1,0 +1,1 @@
+App.HabitsController = Ember.ArrayController.extend()

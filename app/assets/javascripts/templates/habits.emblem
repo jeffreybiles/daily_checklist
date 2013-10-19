@@ -1,0 +1,4 @@
+h1 Habits
+
+each habit in controller
+  render "habit" habit
