@@ -1,0 +1,25 @@
+=input value=title placeholder='title'
+=input value=details placeholder='details'
+
+/ I can't believe I have to type out each of these.  Like a barbarian.
+.input
+  =input type="checkbox" checked=monday
+  | Monday
+.input
+  =input type="checkbox" checked=tuesday
+  | Tuesday
+.input
+  =input type="checkbox" checked=wednesday
+  | Wednesday
+.input
+  =input type="checkbox" checked=thursday
+  | Thursday
+.input
+  =input type="checkbox" checked=friday
+  | Friday
+.input
+  =input type="checkbox" checked=saturday
+  | Saturday
+.input
+  =input type="checkbox" checked=sunday
+  | Sunday
