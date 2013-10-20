@@ -16,7 +16,7 @@ class Api::V1::HabitsController < ApplicationController
 
   def destroy
     @habit = Habit.find(params[:id])
-    respond_with @habit.update_attributes(habit_params)
+    respond_with @habit.destroy
   end
 
   def update

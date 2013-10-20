@@ -1,6 +1,3 @@
 h1 New Habit
 
-form submit='createHabit'
-  partial 'habits/edit_fields'
-
-  input type="submit"
+partial 'habits/edit_fields'

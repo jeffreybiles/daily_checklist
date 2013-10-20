@@ -1,6 +1,6 @@
 App.HabitsNewController = Ember.ObjectController.extend
   actions:
-    createHabit: ->
+    saveHabit: ->
       @get('model').save().then =>
         @transitionToRoute('habits')
 
