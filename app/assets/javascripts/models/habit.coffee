@@ -8,3 +8,5 @@ App.Habit = DS.Model.extend
   friday: DS.attr('boolean')
   saturday: DS.attr('boolean')
   sunday: DS.attr('boolean')
+
+  repetitions: DS.hasMany('repetition')
