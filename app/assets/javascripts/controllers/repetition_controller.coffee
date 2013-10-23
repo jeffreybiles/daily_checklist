@@ -3,11 +3,8 @@ App.RepetitionController = Ember.ObjectController.extend
     model = this.get('model')
 
     if value == undefined
-      value = model.get('completed')
-      console.log(value)
-      value
+      model.get('completed')
     else
-      console.log(value)
       model.set('completed', value)
       model.save()
       value
