@@ -1,0 +1,6 @@
+li class=completed:completed
+  =input class="toggle" type="checkbox" checked=completed
+  label
+    =title
+    |   -
+    small= details

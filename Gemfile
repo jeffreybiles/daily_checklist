@@ -11,8 +11,13 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
-gem 'quiet_assets', :group => :development
-gem 'pry', :group => :development
+
+group :development do
+  gem 'quiet_assets'
+  gem 'pry'
+  gem 'better_errors'
+end
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -23,6 +28,7 @@ gem 'ember-rails'
 gem 'ember-source', '1.0.0'
 gem "ember-data-source", "~> 1.0.0.beta.3"
 gem 'emblem-rails'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

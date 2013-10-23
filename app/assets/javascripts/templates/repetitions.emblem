@@ -1,5 +1,9 @@
-| yo
-each repetition in controller
-  .repetition
-    repetition.completed
-    repetition.habit.title
+section#todoapp
+  section#main
+    ul#todo-list
+      each repetition in controller
+        render 'repetition' repetition
+  footer#footer
+    span#todo-count
+      strong= remaining
+      |  {{inflection}} left
