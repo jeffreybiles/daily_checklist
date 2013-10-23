@@ -1,0 +1,5 @@
+| yo
+each repetition in controller
+  .repetition
+    repetition.completed
+    repetition.habit.title

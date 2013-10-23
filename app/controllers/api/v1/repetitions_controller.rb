@@ -1,4 +1,4 @@
-class RepetitionsController < ApplicationController
+class Api::V1::RepetitionsController < ApplicationController
   respond_to :json
 
   # this will probably change to just showing for a specific day

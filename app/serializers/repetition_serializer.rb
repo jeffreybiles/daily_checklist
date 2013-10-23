@@ -1,6 +1,9 @@
 class RepetitionSerializer < ActiveModel::Serializer
+  embed :ids
+
   attribute :id
   attribute :date
   attribute :completed
-  attribute :habit_id
+
+  has_one :habit
 end
