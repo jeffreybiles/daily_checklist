@@ -1,3 +1,9 @@
+section#date-chooser
+  .row-fluid
+    each day in recentDays
+      .day_tab.span2
+        / day.pretty
+        link-to 'repetitions.date' day.date | {{day.pretty}}
 section#todoapp
   section#main
     ul#todo-list
