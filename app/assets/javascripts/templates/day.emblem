@@ -1,3 +1,14 @@
-each repetition in model
-  .repetition
-    repetition.title
+section#date-chooser
+  .row-fluid
+    each day in recentDays
+      .day_tab.span2
+        a click="goToDay day" {{day.pretty}}
+section#todoapp
+  section#main
+    ul#todo-list
+      each repetition in model
+        render 'repetition' repetition
+  footer#footer
+    span#todo-count
+      strong= remaining
+      |  {{inflection}} left
