@@ -2,7 +2,7 @@ section#date-chooser
   .row-fluid
     each day in recentDays
       .day_tab.span2
-        a click=goToDay day='day.formatted' | {{day.pretty}}
+        a click="goToDay day" {{day.pretty}}
 section#todoapp
   section#main
     ul#todo-list

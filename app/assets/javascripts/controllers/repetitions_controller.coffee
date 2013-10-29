@@ -16,5 +16,4 @@ App.RepetitionsController = Ember.ArrayController.extend
 
   actions:
     goToDay: (day) ->
-      debugger
-      transitionToRoute('day', day)
+      @transitionToRoute('day', day.pretty)

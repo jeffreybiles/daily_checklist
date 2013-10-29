@@ -4,7 +4,7 @@ class Api::V1::RepetitionsController < ApplicationController
   # this will probably change to just showing for a specific day
   def index
     if params[:day] and params[:day][:day]
-      respond_with Repetition.where(date: params[:day][:day])
+      respond_with Repetition.where(date: Date.parse(params[:day][:day]))
     else
       respond_with Repetition.all
     end
