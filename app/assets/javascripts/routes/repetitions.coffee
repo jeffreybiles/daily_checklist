@@ -1,3 +1,3 @@
 App.RepetitionsRoute = Ember.Route.extend
-  model: ->
+  model: (params, transition) ->
     @store.find 'repetition'

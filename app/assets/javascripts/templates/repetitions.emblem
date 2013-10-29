@@ -2,8 +2,7 @@ section#date-chooser
   .row-fluid
     each day in recentDays
       .day_tab.span2
-        / day.pretty
-        link-to 'repetitions.date' day.date | {{day.pretty}}
+        a click=goToDay day='day.formatted' | {{day.pretty}}
 section#todoapp
   section#main
     ul#todo-list
@@ -13,3 +12,4 @@ section#todoapp
     span#todo-count
       strong= remaining
       |  {{inflection}} left
+= outlet
