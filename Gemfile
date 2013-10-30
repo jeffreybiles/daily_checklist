@@ -18,6 +18,11 @@ group :development do
   gem 'better_errors'
 end
 
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
