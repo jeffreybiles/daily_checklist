@@ -1,4 +1,4 @@
-class RepetitionMigrationBlahBlah < ActiveRecord::Migration
+class CreateRepetitions < ActiveRecord::Migration
   def change
     create_table :repetitions do |t|
       t.belongs_to :habit
