@@ -1,3 +1,4 @@
+link-to 'habits' | Make a new habit
 section#date-chooser
   .row-fluid
     each day in recentDays

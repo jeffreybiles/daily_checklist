@@ -3,6 +3,8 @@
     h1 Habits
 
     link-to 'habits.new' | New Habit
+    br
+    link-to 'today' | Today's checklist
     each habit in controller
       render "habit" habit
 
